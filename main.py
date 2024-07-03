@@ -64,7 +64,7 @@ def coffee_machine():
                 nickels = int(input("how many nickels?: "))
                 pennies = int(input("how many pennies?: "))
 
-                paid = round((pennies * 0.25) + (dimes * 0.1) + (nickels * 0.05) + (pennies * 0.01), 2)
+                paid = round((quarters * 0.25) + (dimes * 0.1) + (nickels * 0.05) + (pennies * 0.01), 2)
                 if paid < cost:
                     print(f"Sorry. Not enough money. Money refunded ${paid}.")
                     coffee_machine()
