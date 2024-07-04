@@ -37,9 +37,12 @@ def check_resources(item):
             return i
 
 
+money = 0
+
+
 def coffee_machine():
     buy_coffee = True
-    money = 0
+    global money
     while buy_coffee is True:
         customer_order = input("What would you like? (espresso/latte/cappuccino): ").lower()
 
