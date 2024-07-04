@@ -54,7 +54,7 @@ def coffee_machine():
             buy_coffee = False
         else:
             item = MENU[customer_order]["ingredients"]
-            if check_resources(item):
+            if check_resources(item) == None:
                 cost = MENU[customer_order]["cost"]
                 print(f"The price of {customer_order} is ${cost}.")
                 print("Please insert coins.")
